@@ -1,0 +1,25 @@
+From: Microsoft Account Security <security-alert@micros0ft-support.com>
+To: analyst@example.com
+Subject: Urgent: Your Microsoft Account Will Be Suspended
+Date: October 6, 2026 09:15:22 +0530
+Message-ID: <20261006091522.12345@micros0ft-support.com>
+
+Return-Path: <bounce@micros0ft-support.com>
+
+Received: from mail.micros0ft-support.com
+    by mail.example.com
+    with ESMTP
+    id ABC123
+    for <analyst@example.com>;
+    Tue, 06 Oct 2026 09:15:22 +0530
+
+Authentication-Results: mail.example.com;
+    spf=fail smtp.mailfrom=micros0ft-support.com;
+    dkim=none;
+    dmarc=fail header.from=micros0ft-support.com
+
+Received-SPF: Fail
+    domain of micros0ft-support.com does not designate
+    the sending server as permitted sender
+
+X-Mailer: Unknown Mail Client
