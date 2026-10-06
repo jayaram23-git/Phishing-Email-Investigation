@@ -107,3 +107,22 @@ The attacker creates a sense of urgency and fear by threatening account suspensi
 **Social Engineering Indicators Detected 🚩**
 
 The combination of urgency, threats, impersonation, and a suspicious verification link strongly supports the classification of this email as a phishing attempt.
+## 5. Indicators of Compromise (IOCs)
+
+The following indicators were identified during the investigation:
+
+| IOC Type | Indicator | Description |
+|---|---|---|
+| Domain | `micros0ft-support.com` | Suspicious lookalike domain |
+| Sender Email | `security-alert@micros0ft-support.com` | Suspicious sender address |
+| Return-Path | `bounce@micros0ft-support.com` | Suspicious return address |
+| URL | `http://microsoft-account-security.example.com/verify` | Potential credential-phishing URL |
+| SPF | FAIL | Sending server not authorized |
+| DKIM | NONE | No DKIM signature found |
+| DMARC | FAIL | Authentication/alignment failure |
+
+### IOC Assessment
+
+These indicators collectively support the classification of the email as a **phishing attempt**.
+
+The suspicious domain, authentication failures, social engineering techniques, and potentially malicious URL should be investigated and monitored by the SOC team.
