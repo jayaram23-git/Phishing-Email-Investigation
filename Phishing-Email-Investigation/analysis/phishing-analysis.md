@@ -84,3 +84,26 @@ The link may attempt to direct users to a fake login or account-verification pag
 ### Verdict
 
 **Suspicious URL — Potential Phishing Link 🚩**
+## 4. Social Engineering Analysis
+
+### Techniques Identified
+
+| Technique | Evidence | Risk |
+|---|---|---|
+| Urgency | "within 24 hours" | High |
+| Threat | "account will be permanently suspended" | High |
+| Impersonation | Claims to be Microsoft | High |
+| Credential Targeting | Requests account verification | High |
+| Suspicious Link | External verification URL | High |
+
+### Findings
+
+The email uses multiple social engineering techniques to pressure the recipient into taking immediate action.
+
+The attacker creates a sense of urgency and fear by threatening account suspension. The email also impersonates a trusted organization and directs the user to a suspicious verification link.
+
+### Verdict
+
+**Social Engineering Indicators Detected 🚩**
+
+The combination of urgency, threats, impersonation, and a suspicious verification link strongly supports the classification of this email as a phishing attempt.
