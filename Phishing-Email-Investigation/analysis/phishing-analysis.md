@@ -126,3 +126,37 @@ The following indicators were identified during the investigation:
 These indicators collectively support the classification of the email as a **phishing attempt**.
 
 The suspicious domain, authentication failures, social engineering techniques, and potentially malicious URL should be investigated and monitored by the SOC team.
+## 6. Final Investigation Verdict
+
+### Classification
+
+**PHISHING EMAIL — MALICIOUS / HIGH RISK 🚨**
+
+### Key Evidence
+
+The investigation identified multiple phishing indicators:
+
+1. Suspicious lookalike sender domain.
+2. SPF authentication failure.
+3. No DKIM signature.
+4. DMARC authentication failure.
+5. Suspicious account-verification URL.
+6. Urgency and threat-based social engineering.
+7. Impersonation of a trusted organization.
+8. Multiple Indicators of Compromise (IOCs).
+
+### Recommended SOC Actions
+
+- Do not click the suspicious URL.
+- Do not provide credentials or other sensitive information.
+- Block or monitor the suspicious domain and URL.
+- Report the email as phishing.
+- Search security logs and email systems for similar messages.
+- Check whether other users received the same email.
+- If credentials were submitted, reset the affected account credentials and investigate for unauthorized activity.
+
+### Final Conclusion
+
+Based on the sender analysis, email authentication results, suspicious URL, social engineering techniques, and identified IOCs, the email is classified as a **phishing attempt**.
+
+**Final Verdict: Malicious / High Risk**
